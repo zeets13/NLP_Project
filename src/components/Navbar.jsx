@@ -2,16 +2,16 @@ import { Bell, UserCircle2 } from "lucide-react";
 import { FaUserCheck, FaUserCircle } from "react-icons/fa";
 
 
-
 export default function Navbar() {
   return (
-    <nav className="h-20 flex items-center justify-between px-12 pt-8">
+    <nav className="h-20 flex items-center justify-between px-12 pt-5">
       <div className="flex items-center gap-4">
 
         
         <div className="mx-auto ">
 
-          <h1 className="text-2xl font-bold py-1 text-gray-200">
+
+          <h1 className="text-2xl font-bold text-gray-200">
 
             HateShield AI
 
