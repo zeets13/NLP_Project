@@ -1,21 +1,22 @@
 import ChatBubble from "./ChatBubble";
 import ResultCard from "./ResultCard";
 
-export default function ChatWindow() {
+export default function ChatWindow({messages}) {
   return (
     <main className="flex-1 overflow-y-auto px-8 py-8">
 
-      <ChatBubble
-        sender="bot"
-        message="Hello! I'm here to help detect harmful speech."
-      />
+      
+            {messages.map((msg, index) => (
 
-      <ChatBubble
-        sender="user"
-        message="I hate you."
-      />
+                <ChatBubble
+                    key={index}
+                    sender={msg.sender}
+                    message={msg.text}
+                />
 
-      <ResultCard />
+            ))}
+
+      {/*<ResultCard />*/}
 
     </main>
   );
